@@ -19,7 +19,7 @@ RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
 FROM alpine:3.13
 
 ENV MYSQL_HOST 10.0.224.2
-ENV MYSQL_USERNAME root
+ENV MYSQL_USER_NAME root
 ENV MYSQL_PASSWORD Tusir-631156
 ENV DATABASE_NAME tusir-music
 # 安装依赖包，如需其他依赖包，请到alpine依赖包管理(https://pkgs.alpinelinux.org/packages?name=php8*imagick*&branch=v3.13)查找。
