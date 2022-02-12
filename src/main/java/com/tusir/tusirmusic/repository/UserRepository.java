@@ -11,5 +11,6 @@ import java.util.List;
  */
 public interface UserRepository extends JpaRepository<User, String> {
 
+    //根据名称查询
     User getByUsername(String username);
 }
